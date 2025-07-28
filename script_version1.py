@@ -1,16 +1,18 @@
-"""DOCSTRING
-Dragonhacks competition 2025
-
+"""
+Script V1
+=====
+  A simple script that uses the wikipedia API to search for a user-inputted
+  term and returns the top 5 results with their corresponding URLs in a JSON
+  format.
+  
 Notes:
+  a bit janky at times, searches the ENTIRE wikipedia for results which is not great
+  in terms of accuracy, but atleast is a psudeo-search engine? idk man, this
+  thing has the potential to be good and terrible at the same time.
 
-a bit janky at times, searches the ENTIRE wikipedia for results which is not great
-in terms of accuracy, but atleast is a psudeo-search engine? idk man, this
-thing has the potential to be mid or dookie
-
-
-i dont know how you would format the JSON request and i assume you
-know how to convert it into a python variable. send me an example JSON and
-you better keep the formatting consistent
+  i dont know how you would format the JSON request and i assume you
+  know how to convert it into a python variable. send me an example JSON and
+  you better keep the formatting consistent
 """
 userinput = "paris"
 
@@ -75,5 +77,5 @@ for a,b in zip(results, link):
 debug(results)
 
 # export as JSON
-with open(r'C:\Users\User\OneDrive\Desktop\homework\Coding\Python\Dragonhacks Backend\results.json', 'w') as file:
+with open(r'results.json', 'w') as file:
   json.dump(tojson, file, indent = 2)

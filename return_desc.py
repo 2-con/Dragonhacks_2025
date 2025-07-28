@@ -1,8 +1,8 @@
-"""DOCSTRING
-Dragonhacks competition 2025
-
-Notes:
-
+"""
+Return Description
+=====
+  This file contains the code for the return_desc.py module, which is part of the Dragonhacks competition 2025 project. 
+  The module is responsible for searching and returning descriptions of mental disorders from Wikipedia based on user input.
 """
 
 # imports

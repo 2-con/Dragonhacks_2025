@@ -1,18 +1,20 @@
-"""DOCSTRING
-Dragonhacks competition 2025
-
-Notes:
-
-limited scope of topics, searches only this page for things. guerenteed to not return any funny results
-but might have a small scope of understanding since it only scans this page. this thing is very fast
-but if there's something thats not there, we're cooked. god forbid this page is just misinformation.
-
-
-i dont know how you would format the JSON request and i assume you
-know how to convert it into a python variable. send me an example JSON and
-you better keep the formatting consistent
 """
-userinput = "Rett syndrome"
+Script V2
+=====
+  This script is a simple web scraper that searches for mental disorders on a specific Wikipedia page.
+  It collects the names of disorders and their corresponding links, filtering based on user input.
+  It is a more focused search compared to the previous version, which used the Wikipedia API.
+  
+Notes:
+  limited scope of topics, searches only this page for things. guerenteed to not return any funny results
+  but might have a small scope of understanding since it only scans this page. this thing is very fast
+  but if there's something thats not there, we're cooked. god forbid this page is just misinformation.
+
+  i dont know how you would format the JSON request and i assume you
+  know how to convert it into a python variable. send me an example JSON and
+  you better keep the formatting consistent
+"""
+userinput = "test"  # example user input, replace with actual input
 
 # imports
 
@@ -66,7 +68,7 @@ for a,b in zip(texts_match, links_match):
     break
 
 # export as JSON
-file = open(r'C:\Users\User\OneDrive\Desktop\homework\Coding\Python\Dragonhacks Backend\results.json', 'w')
+file = open(r'results.json', 'w')
 file.write("{")
 for i in tojson:
   file.write(f'\n  "{i}": "{tojson[i]}"')

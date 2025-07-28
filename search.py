@@ -1,9 +1,11 @@
-"""DOCSTRING
-Dragonhacks competition 2025
-
+"""
+Search
+=====
+  A simple search engine for mental disorders using Wikipedia.
+  Acts as a chatbot-like engine to find information about mental disorders.
+  
 Notes:
-
-may be a bit goofy
+  may be a bit goofy
 """
 
 # imports
